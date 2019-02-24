@@ -1,0 +1,57 @@
+{
+  "name": "axios-json-mocks",
+  "version": "0.0.1",
+  "description": "Axios helper that allows to easily mock requests",
+  "main": "lib/axios-json-mocks.min.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "eslint src/**/*.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "build": "webpack --mode development ./src/index.js --output ./lib/axios-json-mocks.js",
+    "build:min": "webpack --mode production ./src/index.js --output ./lib/axios-json-mocks.min.js",
+    "prepublish": "npm run clean && npm run build && npm run build:min"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "./node_modules/.bin/eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luixlacrux/axios-json-mocks.git"
+  },
+  "keywords": [
+    "axios",
+    "test",
+    "mocks",
+    "request",
+    "json-mocks"
+  ],
+  "author": "Luis Lacruz <@luixlacrux>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luixlacrux/axios-json-mocks/issues"
+  },
+  "homepage": "https://github.com/luixlacrux/axios-json-mocks#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "husky": "^1.3.1",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.1.4",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
