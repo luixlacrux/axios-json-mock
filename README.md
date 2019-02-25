@@ -1,13 +1,13 @@
-# axios-json-mocks
+# axios-json-mock
 Axios helper that allows to easily mock request
 
 #### Installation
 
 Using npm:
 
-`npm install axios-json-mocks --save`
+`npm install axios-json-mock --save`
 
-axios-json-mocks works on Node as well as in a browser, it works with axios v0.16.0 and above.
+axios-json-mock works on Node as well as in a browser, it works with axios v0.16.0 and above.
 
 #### Example
 
@@ -15,10 +15,10 @@ Mocking a `GET` request
 
 ```js
 import axios from 'axios';
-import AxiosJsonMocks from 'axios-json-mocks';
+import AxiosJsonMock from 'axios-json-mock';
 
 // Set default axios instance
-const instance = new AxiosJsonMocks(axios);
+const instance = new AxiosJsonMock(axios);
 
 const responseWith = {
   200: [
@@ -51,7 +51,7 @@ instance({ url: '/users' }, {
 
 To add a delay to responses, specify amout (in milliseconds)
 ```js
-const instance = new AxiosJsonMocks(axios, { timeout: 1000 });
+const instance = new AxiosJsonMock(axios, { timeout: 1000 });
 ```
 
 Using a mocks folder with json files
@@ -76,10 +76,10 @@ userlist.json
 
 ```js
 import axios from 'axios';
-import AxiosJsonMocks from 'axios-json-mocks';
+import AxiosJsonMock from 'axios-json-mock';
 
 // Set default axios instance with mocks folder
-const instance = new AxiosJsonMocks(axios, { mockFolder: __dirname + '__mocks__' });
+const instance = new AxiosJsonMock(axios, { mockFolder: __dirname + '__mocks__' });
 
 instance({ url: '/users' }, {
   useMock: true,
