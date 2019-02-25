@@ -3,7 +3,7 @@
 const DEFAULT_MOCKS_FOLDER_PATH = './src/mocks';
 const DEFAULT_MOCKS_TIMEOUT = 200;
 
-class AxiosJsonMocks {
+class AxiosJsonMock {
   /**
    *
    * @param {Promise} axiosInstance - Axios instance to use
@@ -79,4 +79,4 @@ class AxiosJsonMocks {
   }
 }
 
-export default AxiosJsonMocks;
+export default AxiosJsonMock;

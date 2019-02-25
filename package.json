@@ -1,15 +1,15 @@
 {
-  "name": "axios-json-mocks",
+  "name": "axios-json-mock",
   "version": "0.0.1",
   "description": "Axios helper that allows to easily mock requests",
-  "main": "lib/axios-json-mocks.min.js",
+  "main": "lib/axios-json-mock.min.js",
   "scripts": {
     "clean": "rimraf lib",
     "lint": "eslint src/**/*.js",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "build": "webpack --mode development ./src/index.js --output ./lib/axios-json-mocks.js",
-    "build:min": "webpack --mode production ./src/index.js --output ./lib/axios-json-mocks.min.js",
+    "build": "webpack --mode development ./src/index.js --output ./lib/axios-json-mock.js",
+    "build:min": "webpack --mode production ./src/index.js --output ./lib/axios-json-mock.min.js",
     "prepublish": "npm run clean && npm run build && npm run build:min"
   },
   "husky": {
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luixlacrux/axios-json-mocks.git"
+    "url": "git+https://github.com/luixlacrux/axios-json-mock.git"
   },
   "keywords": [
     "axios",
@@ -37,9 +37,9 @@
   "author": "Luis Lacruz <@luixlacrux>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/luixlacrux/axios-json-mocks/issues"
+    "url": "https://github.com/luixlacrux/axios-json-mock/issues"
   },
-  "homepage": "https://github.com/luixlacrux/axios-json-mocks#readme",
+  "homepage": "https://github.com/luixlacrux/axios-json-mock#readme",
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/plugin-proposal-class-properties": "^7.3.3",

@@ -1,6 +1,6 @@
 module.exports = {
   output: {
-    library: 'AxiosJsonMocks',
+    library: 'AxiosJsonMock',
     libraryTarget: 'umd',
   },
   externals: {
