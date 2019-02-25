@@ -1,6 +1,7 @@
 # axios-json-mock
-Axios helper that allows to easily mock request
 [![Build Status](https://travis-ci.com/luixlacrux/axios-json-mock.svg?token=WyKWXPAtLzD7DDaLRskW&branch=master)](https://travis-ci.com/luixlacrux/axios-json-mock)![npm bundle size](https://img.shields.io/bundlephobia/min/axios-json-mock.svg)
+---
+Axios helper that allows to easily mock request
 
 #### Installation
 
