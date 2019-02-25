@@ -70,7 +70,7 @@ class AxiosJsonMocks {
             reject({ response: res });
           }
 
-          resolve(res);
+          resolve({ data: res });
         }, timeout);
       });
     }
