@@ -6,7 +6,8 @@ const DEFAULT_MOCKS_TIMEOUT = 200;
 class AxiosJsonMocks {
   /**
    *
-   * @param {Object} config - custom helper config
+   * @param {Promise} axiosInstance - Axios instance to use
+   * @param {Object} config - Custom helper config
    * @return {Promise} A new instance of Axios
    */
   constructor(axiosInstance, config = {}) {
@@ -26,8 +27,8 @@ class AxiosJsonMocks {
 
   /**
    *
-   * @param {Object} options - axios request options
-   * @param {Object} mockOptions - mock request options
+   * @param {Object} options - Axios request options
+   * @param {Object} mockOptions - Mock request options
    */
   request(options, mockOptions) {
     const extendMockOptions = {
